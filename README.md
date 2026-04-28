@@ -6,7 +6,7 @@
 
 ## 🌟 The Problem
 
-Independent mothers often feel overwhelmed by generic blogs and massive e-commerce catalogs. They don't need more products—they need **contextual, real-time guidance**, especially during uncertain moments (like 2 AM when a new behavior appears).
+Independent mothers often feel overwhelmed by generic blogs and massive e-commerce catalogs. They don't need more products they need **contextual, real-time guidance**, especially during uncertain moments (like 2 AM when a new behavior appears).
 
 ---
 
