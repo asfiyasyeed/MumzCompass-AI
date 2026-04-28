@@ -77,62 +77,81 @@ This demonstrates **real-world debugging and adaptability under constraints**.
 ```bash
 git clone https://github.com/asfiyasyeed/MumzCompass-AI
 cd MumzCompass-AI
-2. Create Virtual Environment
-python -m venv venv
-source venv/bin/activate      # Mac/Linux
-.\venv\Scripts\activate       # Windows
-3. Install Dependencies
-pip install -r requirements.txt
-4. Add API Key
+
+## 2. Create Virtual Environment
+python -m venv venv  
+source venv/bin/activate      # Mac/Linux  
+.\venv\Scripts\activate       # Windows  
+
+## 3. Install Dependencies
+pip install -r requirements.txt  
+
+## 4. Add API Key
 
 Create a .env file:
 
-OPENROUTER_API_KEY=your_key_here
-5. Run the App
-streamlit run app.py
-📊 Evaluation
+OPENROUTER_API_KEY=your_key_here  
+
+## 5. Run the App
+streamlit run app.py  
+
+---
+
+## 📊 Evaluation
 
 See EVALS.md for a structured evaluation across 10 test scenarios, including:
 
-🌍 Mixed-language input (English + Arabic)
-🧠 Behavior-based age inference
-🚨 Medical safety guardrails
-❓ Handling vague and ambiguous queries
-🤖 Tooling Transparency
-Cursor / VS Code: Primary development environment
-AI Assistance:
-Streamlit UI structuring
-Debugging OpenRouter integration issues
-Loom: Used for final walkthrough demo
-🗺️ Future Roadmap: Scaling MumzCompass
+- 🌍 Mixed-language input (English + Arabic)  
+- 🧠 Behavior-based age inference  
+- 🚨 Medical safety guardrails  
+- ❓ Handling vague and ambiguous queries  
+
+---
+
+## 🤖 Tooling Transparency
+
+- Cursor / VS Code: Primary development environment  
+- AI Assistance:  
+  - Streamlit UI structuring  
+  - Debugging OpenRouter integration issues  
+- Loom: Used for final walkthrough demo  
+
+---
+
+## 🗺️ Future Roadmap: Scaling MumzCompass
 
 With more development time, this prototype can evolve into a full production system:
 
-🔹 1. Dynamic RAG with Vector Database
+### 🔹 1. Dynamic RAG with Vector Database
 
-Move from static JSON → Vector DB (FAISS / Pinecone)
+- Move from static JSON → Vector DB (FAISS / Pinecone)  
+- Enable semantic search across:  
+  - real product catalogs  
+  - parenting articles  
+- Provide deeper, contextual recommendations  
 
-Enable semantic search across:
-real product catalogs
-parenting articles
-Provide deeper, contextual recommendations
-🔹 2. Voice-to-Guidance (Arabic + English)
-Integrate Whisper (Speech-to-Text)
-Allow mothers to send voice notes
-Respond with AI-generated voice (e.g., ElevenLabs)
-🔹 3. Predictive Development Timeline
-Track user interactions
-Predict upcoming milestones
+### 🔹 2. Voice-to-Guidance (Arabic + English)
+
+- Integrate Whisper (Speech-to-Text)  
+- Allow mothers to send voice notes  
+- Respond with AI-generated voice (e.g., ElevenLabs)  
+
+### 🔹 3. Predictive Development Timeline
+
+- Track user interactions  
+- Predict upcoming milestones  
 
 Example:
 
-If baby is "rolling" → suggest "crawling safety" in ~2 months
+If baby is "rolling" → suggest "crawling safety" in ~2 months  
 
-🔹 4. Computer Vision Integration
-Upload:
-product labels
-baby conditions (non-critical)
-Use Vision Models to:
-explain usage
-categorize concerns
-respond in native language
+### 🔹 4. Computer Vision Integration
+
+Upload:  
+- product labels  
+- baby conditions (non-critical)  
+
+Use Vision Models to:  
+- explain usage  
+- categorize concerns  
+- respond in native language  
