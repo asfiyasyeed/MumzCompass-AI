@@ -1,82 +1,138 @@
-# MumzCompass-AI
-🤱 MumzCompass AI: The Developmental Co-Pilot
-Mumzworld AI-Native Intern Assessment | Track A: AI Engineering
+# 🤱 MumzCompass AI: The Developmental Co-Pilot
 
-🌟 The Problem
-Independent mothers often feel overwhelmed by generic blogs and massive e-commerce catalogs. They don't need more products; they need contextual guidance at 2 AM when they are observing a new behavior in their child.
+**Mumzworld AI-Native Intern Assessment | Track A: AI Engineering**
 
-🚀 The Solution
-MumzCompass is a multilingual AI agent that bridges the gap between pediatric milestones and e-commerce. Instead of searching for "High Chairs," a mother simply describes her baby's progress (e.g., "My 6-month-old is finally sitting up!"). The agent:
+---
 
-Analyzes the developmental stage using a grounded Knowledge Base.
+## 🌟 The Problem
 
-Educates the mother on what to expect next (English & Arabic).
+Independent mothers often feel overwhelmed by generic blogs and massive e-commerce catalogs. They don't need more products—they need **contextual, real-time guidance**, especially during uncertain moments (like 2 AM when a new behavior appears).
 
-Curates specific essentials that match that exact developmental "signal."
+---
 
-Protects by triggering safety guardrails if medical symptoms are detected.
+## 🚀 The Solution
 
-🛠️ The Tech Stack
-Language: Python 3.x
+**MumzCompass** is a multilingual AI agent that bridges the gap between **developmental science** and **e-commerce guidance**.
 
-AI Engine: OpenAI gpt-4o-mini (via OpenRouter)
+Instead of searching for products like *"High Chairs"*, a mother simply describes her baby’s behavior:
 
-Interface: Streamlit (For a production-ready web feel)
+> *"My 6-month-old is finally sitting up!"*
 
-Data Strategy: Grounded JSON Knowledge Base (RAG-inspired architecture)
+The AI agent then:
 
-🏗️ Architecture & Trade-offs
-Why a Grounded Knowledge Base?
-I deliberately chose to use a local knowledge_base.json rather than letting the AI answer freely. This ensures:
+- 🧠 **Analyzes** the developmental stage using a grounded Knowledge Base  
+- 📚 **Educates** the mother on what to expect next (English & Arabic)  
+- 🛍️ **Recommends** relevant products tied to that exact milestone  
+- 🚨 **Protects** by triggering safety guardrails if medical symptoms are detected  
 
-Zero Hallucinations: The agent only recommends products actually in the Mumzworld-style catalog.
+---
 
-Safety First: I implemented a specific "Medical Deferral" logic. If a user mentions a fever or injury, the agent prioritizes a doctor's visit over a product sale.
+## 🛠️ Tech Stack
 
-The Pivot (Technical Troubleshooting):
-During development, I encountered 404/400 errors with several free-tier Llama and Gemini models on OpenRouter. I successfully pivoted to gpt-4o-mini, proving system resilience and the ability to troubleshoot API instability under pressure.
+- **Language:** Python 3.x  
+- **AI Engine:** OpenAI `gpt-4o-mini` (via OpenRouter)  
+- **Interface:** Streamlit (production-style UI)  
+- **Data Strategy:** Grounded JSON Knowledge Base (RAG-inspired architecture)  
 
-🚦 Setup & Installation (Under 2 Minutes)
-Clone the Repo:
-git clone [Your-Repo-Link]
+---
 
-Create Virtual Environment:
+## 🏗️ Architecture & Trade-offs
+
+### 🔹 Why a Grounded Knowledge Base?
+
+Instead of allowing free-form AI responses, the system uses a structured local dataset (`knowledge_base.json`).
+
+This ensures:
+
+- ❌ **Zero Hallucinations**  
+  Only predefined, relevant products are recommended  
+
+- 🛡️ **Safety First**  
+  A built-in **Medical Deferral System** overrides all logic if symptoms like:
+  - fever  
+  - pain  
+  - injury  
+  are detected  
+
+  → The user is immediately advised to consult a pediatrician  
+
+---
+
+### 🔄 The Pivot (Technical Resilience)
+
+During development, multiple OpenRouter models (Llama, Gemini) returned **404 / 400 errors**.
+
+Instead of blocking progress:
+- Switched to **`gpt-4o-mini`**
+- Stabilized API behavior
+- Ensured consistent performance
+
+This demonstrates **real-world debugging and adaptability under constraints**.
+
+---
+
+## 🚦 Setup & Installation (Under 2 Minutes)
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/asfiyasyeed/MumzCompass-AI
+cd MumzCompass-AI
+2. Create Virtual Environment
 python -m venv venv
-source venv/bin/activate (or .\venv\Scripts\activate on Windows)
-
-Install Dependencies:
+source venv/bin/activate      # Mac/Linux
+.\venv\Scripts\activate       # Windows
+3. Install Dependencies
 pip install -r requirements.txt
+4. Add API Key
 
-Add API Key:
-Create a .env file and add: OPENROUTER_API_KEY=your_key_here
+Create a .env file:
 
-Run the App:
+OPENROUTER_API_KEY=your_key_here
+5. Run the App
 streamlit run app.py
-
 📊 Evaluation
-See EVALS.md for a detailed breakdown of 10 stress tests, including:
 
-Bilingual (English/Arabic) mixed input handling.
+See EVALS.md for a structured evaluation across 10 test scenarios, including:
 
-Behavior-based age inference.
-
-Safety guardrail triggers for medical emergencies.
-
+🌍 Mixed-language input (English + Arabic)
+🧠 Behavior-based age inference
+🚨 Medical safety guardrails
+❓ Handling vague and ambiguous queries
 🤖 Tooling Transparency
-Cursor/VS Code: Primary IDE for development.
-
-AI Assistance: Used for structuring the Streamlit layout and debugging OpenRouter model ID mismatches.
-
-Loom: Used for the final walkthrough demonstration.
-
-
+Cursor / VS Code: Primary development environment
+AI Assistance:
+Streamlit UI structuring
+Debugging OpenRouter integration issues
+Loom: Used for final walkthrough demo
 🗺️ Future Roadmap: Scaling MumzCompass
-If given additional development time, I would focus on transforming this prototype into a full-scale production system:
 
-Dynamic RAG with Vector Databases: Transition from a static JSON knowledge base to a Vector Database (like Pinecone or FAISS). This would allow the agent to perform Retrieval-Augmented Generation (RAG) over thousands of real Mumzworld product descriptions and blog articles, providing even deeper context.
+With more development time, this prototype can evolve into a full production system:
 
-Voice-to-Guidance (Arabic/English): Integrating Whisper (STT) to allow busy mothers to record a voice note while multi-tasking. The AI would process the audio, identify the milestone, and respond with a summarized voice note using ElevenLabs.
+🔹 1. Dynamic RAG with Vector Database
 
-Predictive Timeline Personalization: Using historical interaction data to predict the next developmental leap. For example, if a mother mentions her baby is "rolling" today, the app would automatically suggest "crawling-safety" tips and products in exactly two months.
+Move from static JSON → Vector DB (FAISS / Pinecone)
 
-Computer Vision Integration: A feature where a mother can upload a photo of a diaper rash or a product label, and the AI uses Vision Models to categorize the concern or explain product usage in her native language.
+Enable semantic search across:
+real product catalogs
+parenting articles
+Provide deeper, contextual recommendations
+🔹 2. Voice-to-Guidance (Arabic + English)
+Integrate Whisper (Speech-to-Text)
+Allow mothers to send voice notes
+Respond with AI-generated voice (e.g., ElevenLabs)
+🔹 3. Predictive Development Timeline
+Track user interactions
+Predict upcoming milestones
+
+Example:
+
+If baby is "rolling" → suggest "crawling safety" in ~2 months
+
+🔹 4. Computer Vision Integration
+Upload:
+product labels
+baby conditions (non-critical)
+Use Vision Models to:
+explain usage
+categorize concerns
+respond in native language
