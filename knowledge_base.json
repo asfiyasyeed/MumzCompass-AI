@@ -1,0 +1,231 @@
+{
+  "store_metadata": {
+    "currency": "AED",
+    "region": "GCC"
+  },
+  "milestones": [
+    {
+      "month_range": "0-3",
+      "focus": "Newborn Adaptation & Sleep Regulation",
+      "developmental_pillars": ["Sensory", "Cognitive"],
+      "milestone_en": "Baby is adjusting to the world, developing sleep cycles, and responding to light, sound, and touch.",
+      "milestone_ar": "يتأقلم الطفل مع العالم الخارجي ويبدأ بتنظيم النوم والاستجابة للضوء والصوت واللمس.",
+      "signals": ["sleeping", "crying", "startle reflex", "feeding", "eye contact"],
+      "products": [
+        {
+          "id": "p1",
+          "name": "Swaddle Blanket",
+          "category": "Sleep",
+          "reason_en": "Helps calm startle reflex and improves sleep.",
+          "reason_ar": "يساعد على تهدئة منعكس الفزع وتحسين النوم."
+        },
+        {
+          "id": "p2",
+          "name": "Newborn Bath Thermometer",
+          "category": "Safety",
+          "reason_en": "Ensures safe bathing temperature.",
+          "reason_ar": "يضمن درجة حرارة آمنة أثناء الاستحمام."
+        },
+        {
+          "id": "p3",
+          "name": "White Noise Machine",
+          "category": "Sleep",
+          "reason_en": "Mimics womb-like environment for calming.",
+          "reason_ar": "يحاكي بيئة الرحم لتهدئة الطفل."
+        }
+      ]
+    },
+
+    {
+      "month_range": "3-6",
+      "focus": "Early Movement & Hand Awareness",
+      "developmental_pillars": ["Gross Motor", "Sensory"],
+      "milestone_en": "Baby begins rolling, reaching, and showing strong interest in objects.",
+      "milestone_ar": "يبدأ الطفل بالتقلب والوصول للأشياء وإظهار اهتمام بالأجسام المحيطة.",
+      "signals": ["rolling", "grabbing", "tummy time", "hand control"],
+      "products": [
+        {
+          "id": "p4",
+          "name": "Activity Gym Mat",
+          "category": "Play",
+          "reason_en": "Encourages tummy time and motor development.",
+          "reason_ar": "يشجع وقت البطن وتطوير الحركة."
+        },
+        {
+          "id": "p5",
+          "name": "Soft Rattle Toys Set",
+          "category": "Developmental Toys",
+          "reason_en": "Improves grip and sensory stimulation.",
+          "reason_ar": "يحسن القبض والتحفيز الحسي."
+        },
+        {
+          "id": "p6",
+          "name": "Baby Bouncer Seat",
+          "category": "Gear",
+          "reason_en": "Supports safe upright positioning.",
+          "reason_ar": "يدعم وضعية الجلوس الآمنة."
+        }
+      ]
+    },
+
+    {
+      "month_range": "6-9",
+      "focus": "Sitting, Crawling & Exploration",
+      "developmental_pillars": ["Gross Motor", "Sensory"],
+      "milestone_en": "Baby starts sitting independently and may begin crawling and exploring objects.",
+      "milestone_ar": "يبدأ الطفل بالجلوس دون دعم وقد يبدأ بالحبو واستكشاف الأشياء.",
+      "signals": ["sitting", "crawling", "grabbing", "putting objects in mouth"],
+      "products": [
+        {
+          "id": "p7",
+          "name": "High Chair",
+          "category": "Feeding",
+          "reason_en": "Supports early feeding independence.",
+          "reason_ar": "يدعم الاستقلالية في التغذية."
+        },
+        {
+          "id": "p8",
+          "name": "Silicone Feeder",
+          "category": "Feeding",
+          "reason_en": "Safe introduction to solid foods.",
+          "reason_ar": "تقديم آمن للطعام الصلب."
+        },
+        {
+          "id": "p9",
+          "name": "Foam Play Mat",
+          "category": "Play",
+          "reason_en": "Safe crawling environment.",
+          "reason_ar": "بيئة آمنة للحبو."
+        }
+      ]
+    },
+
+    {
+      "month_range": "9-12",
+      "focus": "Standing & Early Communication",
+      "developmental_pillars": ["Gross Motor", "Cognitive"],
+      "milestone_en": "Baby pulls to stand, may cruise along furniture, and begins basic communication.",
+      "milestone_ar": "يبدأ الطفل بالوقوف مع الدعم والتنقل على الأثاث والتواصل البسيط.",
+      "signals": ["standing", "cruising", "babbling", "pointing"],
+      "products": [
+        {
+          "id": "p10",
+          "name": "Baby Safety Gate",
+          "category": "Safety",
+          "reason_en": "Prevents access to unsafe areas.",
+          "reason_ar": "يمنع الوصول إلى المناطق الخطرة."
+        },
+        {
+          "id": "p11",
+          "name": "Push Walker Toy",
+          "category": "Developmental Toys",
+          "reason_en": "Supports first steps.",
+          "reason_ar": "يدعم الخطوات الأولى."
+        },
+        {
+          "id": "p12",
+          "name": "Soft Building Blocks",
+          "category": "Cognitive Toys",
+          "reason_en": "Encourages problem solving.",
+          "reason_ar": "يعزز حل المشكلات."
+        }
+      ]
+    },
+
+    {
+      "month_range": "12-18",
+      "focus": "Walking & Independence",
+      "developmental_pillars": ["Gross Motor", "Cognitive"],
+      "milestone_en": "Baby walks independently and explores surroundings with confidence.",
+      "milestone_ar": "يمشي الطفل بشكل مستقل ويستكشف البيئة بثقة.",
+      "signals": ["walking", "running", "climbing", "exploring"],
+      "products": [
+        {
+          "id": "p13",
+          "name": "Anti-Tip Furniture Straps",
+          "category": "Safety",
+          "reason_en": "Prevents furniture accidents.",
+          "reason_ar": "يمنع حوادث سقوط الأثاث."
+        },
+        {
+          "id": "p14",
+          "name": "Toddler Shoes",
+          "category": "Clothing",
+          "reason_en": "Supports stable walking.",
+          "reason_ar": "يدعم المشي المستقر."
+        },
+        {
+          "id": "p15",
+          "name": "Activity Cube",
+          "category": "Toys",
+          "reason_en": "Improves coordination and thinking.",
+          "reason_ar": "يحسن التنسيق والتفكير."
+        }
+      ]
+    },
+
+    {
+      "month_range": "18-24",
+      "focus": "Language Explosion & Active Play",
+      "developmental_pillars": ["Cognitive", "Social"],
+      "milestone_en": "Baby starts forming words and engaging in active play.",
+      "milestone_ar": "يبدأ الطفل بتكوين كلمات والمشاركة في اللعب النشط.",
+      "signals": ["words", "running", "pretend play", "following instructions"],
+      "products": [
+        {
+          "id": "p16",
+          "name": "Interactive Learning Toys",
+          "category": "Education",
+          "reason_en": "Boosts early language skills.",
+          "reason_ar": "يعزز مهارات اللغة المبكرة."
+        },
+        {
+          "id": "p17",
+          "name": "Pretend Play Kitchen Set",
+          "category": "Imaginative Play",
+          "reason_en": "Encourages creativity.",
+          "reason_ar": "يشجع الإبداع."
+        },
+        {
+          "id": "p18",
+          "name": "Story Picture Books",
+          "category": "Learning",
+          "reason_en": "Builds vocabulary.",
+          "reason_ar": "يبني المفردات."
+        }
+      ]
+    },
+
+    {
+      "month_range": "24-26",
+      "focus": "Autonomy & Social Interaction",
+      "developmental_pillars": ["Social", "Cognitive"],
+      "milestone_en": "Toddler shows independence, plays with others, and understands simple rules.",
+      "milestone_ar": "يظهر الطفل الاستقلالية ويلعب مع الآخرين ويفهم القواعد البسيطة.",
+      "signals": ["sharing", "talking", "running", "role play"],
+      "products": [
+        {
+          "id": "p19",
+          "name": "Board Games for Toddlers",
+          "category": "Social Play",
+          "reason_en": "Teaches turn-taking.",
+          "reason_ar": "يعلم تبادل الأدوار."
+        },
+        {
+          "id": "p20",
+          "name": "Art & Coloring Set",
+          "category": "Creativity",
+          "reason_en": "Enhances fine motor skills.",
+          "reason_ar": "يعزز المهارات الحركية الدقيقة."
+        },
+        {
+          "id": "p21",
+          "name": "Outdoor Play Set",
+          "category": "Physical Play",
+          "reason_en": "Encourages active movement.",
+          "reason_ar": "يشجع الحركة النشطة."
+        }
+      ]
+    }
+  ]
+}
