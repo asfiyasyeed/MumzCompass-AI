@@ -74,7 +74,7 @@ This demonstrates **real-world debugging and adaptability under constraints**.
 ## 🚦 Setup & Installation (Under 2 Minutes)
 
 ### 1. Clone the Repository
-```bash
+
 git clone https://github.com/asfiyasyeed/MumzCompass-AI
 cd MumzCompass-AI
 
