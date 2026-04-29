@@ -1,5 +1,8 @@
 # 🤱 MumzCompass AI: The Developmental Co-Pilot
 
+## 📺 Project Walkthrough
+[Watch the 3-Minute Technical Demo Here  (https://www.loom.com/share/3b418a2b026148b2a7783d754c8c0792) ]
+
 **Mumzworld AI-Native Intern Assessment | Track A: AI Engineering**
 
 ---
